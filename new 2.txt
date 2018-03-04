@@ -1,0 +1,31 @@
+input[type="radio"] {
+position: absolute;
+opacity:0;
+}
+
+.wpcf7-list-item-label{
+	display:inline-block;
+       width: 57px;
+    height: 57px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url(img/n.png) left top no-repeat;
+    cursor:pointer;
+	font-size:0;
+}
+
+input[type="radio"]:checked + .wpcf7-list-item-label{
+	display:inline-block;
+    width:57px;
+    height:57px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url(img/y.png) left top no-repeat;
+    cursor:pointer;
+}
+
+.wpcf7-list-item-label{
+	opacity:0;
+}
+
+.wpcf7-form input:not([type="submit"])
